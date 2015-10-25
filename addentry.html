@@ -1,0 +1,128 @@
+<html>
+<head><title>Add Entry</title> <meta http-equiv = "Content-Type" content="text/html; charset=utf-8"/></head>
+
+<script type = "text/javascript">
+
+function clearf()
+{
+    var result = confirm("Clear the form?");
+    if (result)
+    {
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+}
+</script>
+
+<style type = "text/css">
+
+
+    body,
+    html {
+    margin:0;
+    padding:0;
+    color:#000;
+    
+    background-image:url(bg2.jpg);
+    }
+
+    .body-form-body {
+    position:relative;
+    }
+
+    label[for="body"]{
+    position:absolute;
+    top: -110px;
+    }
+
+   #wrap {
+    width:750px;
+    margin:0 auto;
+    background:#9c9;
+    }
+  
+    #header {
+    padding:30px 80px;
+    background:#ddd;
+    
+    }
+    
+    h1 {
+    margin:0;
+    float: center;
+    }
+    
+    #main {
+    float:left;
+    width:480px;
+    padding:50px;
+    padding-bottom:760px;
+    background:#a7a09a;
+    height:0;
+    }
+    h2 {
+    margin:0;
+    }
+    #sidebar {
+    float:right;
+    width:150px;
+    padding:10px;
+    padding-bottom:800px;
+    background:#99c;
+    height:0;
+    }
+     #footer {
+    clear:both;
+    padding:5px 10px;
+    background:#808080;
+    }
+    #footer p {
+    margin:0;
+    }
+</style>
+<body>
+
+
+    <div id="wrap">
+    <div id="header">
+        <img src ="hanifa.png"></div>
+    
+    <div id="main">
+   	<h2>Add an entry!</h2>
+	
+	<table>
+	<form method="GET" action="addentry.php">
+	<tr><td>Title:</td><td><textarea name="title" rows="1" cols="50"></textarea></td></tr>
+
+
+	<tr><td><p class ="body-form-body"><label for="body">Body:</label></td><td><textarea name="body" rows ="15" cols="60"></textarea></td></tr></p>
+
+
+
+	<tr><td></td><td><input type ="submit" value="Add Entry" />
+	<button type ="reset" value = "clear" onclick ="return clearf();">Clear</td></tr>
+
+	</form>
+	</table>
+    </div>
+    
+    <div id="sidebar">
+<ul> 
+	<li><a href="viewblog.php">          Home </a></li>
+	<li><a href="addentry.html">       Add Entry </a></li>
+ 
+ </ul>
+ </div>
+
+<div id="footer">
+<p>Hanifa Aziz</p>
+</div>
+   
+    </div>
+
+</body>
+</html>
+
